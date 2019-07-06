@@ -10,16 +10,17 @@ const db = pgp()({
    user: "postgres",
    password: "password"
 });
- 
-
 
 app.use(cors());
 
 app.get('/', async (req, res) => {
    let data = await db.any('SELECT * FROM public.template_table'); //change here
    res.send(data);
+   console.log("data: ", data);
 })
 
 app.listen(9000, () => {
    console.log("Server has started");
 });
+
+

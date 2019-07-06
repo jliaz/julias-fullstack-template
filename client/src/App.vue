@@ -1,5 +1,7 @@
 <template>
-   <div></div>
+   <div>
+       <p>Hello World</p>
+   </div>
 </template>
 <script lang="ts">
 import Vue from "vue";
@@ -15,7 +17,7 @@ export default class App extends Vue {
 
    private async test() {
        const result = await request.get({ uri: "http://localhost:9000" });
-       console.log(result);
+       console.log("result: ", result);
    }
 }
 
