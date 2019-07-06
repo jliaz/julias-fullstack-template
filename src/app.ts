@@ -6,15 +6,17 @@ const app = express();
 const db = pgp()({
    host: "localhost",
    port: 5432,
-   database: "database",
+   database: "template_database", //change here
    user: "postgres",
    password: "password"
 });
+ 
+
 
 app.use(cors());
 
 app.get('/', async (req, res) => {
-   let data = await db.any('SELECT * FROM public.table');
+   let data = await db.any('SELECT * FROM public.template_table'); //change here
    res.send(data);
 })
 
