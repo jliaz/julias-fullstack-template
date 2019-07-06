@@ -1,0 +1,28 @@
+{
+  "name": "julias-fullstack-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node src/app.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jliaz/julias-fullstack-template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jliaz/julias-fullstack-template/issues"
+  },
+  "homepage": "https://github.com/jliaz/julias-fullstack-template#readme",
+  "dependencies": {
+    "@types/express": "^4.17.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "pg-promise": "^8.7.3",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.2"
+  }
+}
