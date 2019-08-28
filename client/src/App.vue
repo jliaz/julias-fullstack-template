@@ -1,3 +1,8 @@
+<style lang="less" scoped>
+   @import "style.less";
+
+</style>
+
 <template>
    <div>
        <p>Hello World</p>
