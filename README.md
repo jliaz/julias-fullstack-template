@@ -3,6 +3,8 @@ Major Libraries Involved
 
 VueJS // Frontend Framework
 
+Less // Styling
+
 Typescript // Strict Types
 
 Webpack // For building and serving projects
